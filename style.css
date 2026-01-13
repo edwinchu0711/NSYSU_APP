@@ -5,7 +5,10 @@ body {
     background-color: #f0f2f5;
     color: #1c1e21;
 }
-
+h3{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
 /* 導覽列 */
 .navbar {
     background-color: #ffffff;
@@ -73,7 +76,7 @@ body {
 }
 
 .modal-header {
-    padding: 15px 20px;
+    padding: 8px 20px;
     border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
@@ -88,6 +91,7 @@ body {
     flex-grow: 1;    /* 自動撐滿中間剩餘空間 */
     font-size: 0.95rem;
     line-height: 1.5;
+    
 }
 
 .terms-box {
