@@ -259,3 +259,148 @@ hr {
         max-width: 80%; /* 手機上稍微縮小一點 */
     }
 }
+
+/* --- 歷史版本區塊 --- */
+.history-versions {
+    margin-top: 40px;
+    border-top: 1px dashed #eee;
+    padding-top: 20px;
+}
+
+.history-toggle {
+    background: none;
+    border: none;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+}
+
+.history-toggle:hover {
+    color: var(--primary);
+}
+
+.history-list {
+    margin-top: 15px;
+    background-color: #fcfcfc;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.history-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.history-list th {
+    text-align: left;
+    color: #888;
+    font-weight: 500;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.history-list td {
+    padding: 10px 8px;
+    color: #555;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.history-list a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.history-list a:hover {
+    text-decoration: underline;
+}
+
+/* ...保留您之前的樣式... */
+
+.version-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+    animation: fadeIn 0.5s ease; /* 增加出現動畫 */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.history-list {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.history-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.history-list th {
+    background-color: #f8f9fa;
+    text-align: left;
+    color: #555;
+    padding: 12px 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.history-list td {
+    padding: 15px;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+/* 最新版本特別標註 */
+.latest-version {
+    background-color: #f0f7ff;
+}
+
+.download-link {
+    font-weight: bold;
+    color: var(--primary) !important;
+    
+}
+
+
+.history-list a {
+    color: var(--primary);
+    text-decoration: none;
+    background: #eef4ff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.history-list a:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* 手機版適應：讓表格可以左右滑動避免破版 */
+@media (max-width: 600px) {
+    .history-list {
+        overflow-x: auto;
+    }
+    .history-list table {
+        min-width: 500px;
+    }
+}
+td[data-label="操作"]{
+    min-width: 60px !important;
+}
+
+td[data-label="版本號"]{
+    min-width: 60px !important;
+}

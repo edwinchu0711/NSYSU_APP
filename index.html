@@ -69,18 +69,13 @@
 
             <p><strong>關於隱私</strong>：本程式為非營利性質。所有帳號與密碼僅會儲存於使用者的手機本地端，開發者與第三方伺服器皆無法存取。但有記錄登入次數，以防有人濫用此應用程式。</p>
 
-            <hr> <section id="download" class="download-section">
+            <hr> 
+            
+            <section id="download" class="download-section">
                 <div class="download-intro">
                     <h2>開始使用</h2>
-                    <p>請依照以下步驟完成安裝：</p>
+                    <p>請勾選同意規範以開啟版本選擇：</p>
                 </div>
-
-                <ol class="steps-list">
-                    <li>確認您的裝置為 <strong>Android</strong> 系統。</li>
-                    <li>點擊下方按鈕下載 APK 安裝檔。</li>
-                    <li>若瀏覽器提示安全性警告，請選擇「仍要下載」。</li>
-                    <li>開啟檔案並允許「安裝未知來源應用程式」。</li>
-                </ol>
 
                 <div class="terms-block">
                     <h4>使用規範與聲明</h4>
@@ -96,9 +91,41 @@
                         <span>我已了解上述規範</span>
                     </label>
                     
-                    <button id="realDownloadBtn" class="btn-download" onclick="startDownload()" disabled>
-                        下載 NSYSU_v3.1.0.apk
+                    <button id="realDownloadBtn" class="btn-download" onclick="showVersionList()" disabled>
+                        點擊選擇下載版本
                     </button>
+                </div>
+
+                <div id="versionSection" class="version-section" style="display: none;">
+                    <h3 style="margin-top: 30px; text-align: center;">選擇下載版本</h3>
+                    <div class="history-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-label="版本號">版本號</th>
+                                    <th>更新日期</th>
+                                    <th>下載</th>
+                                    <th>更新說明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="latest-version">
+                                    <td data-label="版本號"><strong>v3.1.1</strong></td>
+                                    <td data-label="更新日期">2026-01-15</td>
+                                    <td data-label="操作"><a href="NSYSU_v3.1.1.apk" class="download-link">下載</a></td>
+                                    <td data-label="更新說明">優化登入檢驗部分，防止亂碼登入</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td data-label="版本號">v3.1.0</td>
+                                    <td data-label="更新日期">2026-01-13</td>
+                                    <td data-label="操作"><a href="NSYSU_v3.1.0.apk">下載</a></td>
+                                    <td data-label="更新說明">六個功能完整可使用</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
         </article>
